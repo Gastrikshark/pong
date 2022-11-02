@@ -35,6 +35,7 @@ public class Ball2 : MonoBehaviour
             BallDirection = Vector3.Reflect(BallDirection, collision.contacts[0].normal);
             em.enabled = true;
             collisionParticleSystem.Play();
+            
         }
         if (collision.gameObject.CompareTag("Player"))
         {
